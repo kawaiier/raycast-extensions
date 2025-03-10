@@ -55,7 +55,7 @@ export function ReadingTimeForm({ initialText = "" }: { initialText?: string }) 
                 await showToast({
                   style: Toast.Style.Failure,
                   title: "Failed to paste text",
-                  message: error instanceof Error ? error.message : "Unknown error occurred"
+                  message: error instanceof Error ? error.message : "Unknown error occurred",
                 });
               }
             }}
